@@ -4,7 +4,7 @@ $semver = "0.0.1-devel"
 // Site Configuration
 
 $config['version'] = "neoticket v".$semver; // This goes in the footer, censor if you wish
-$config['site_name'] = " :: neoticket development"; // This will be appended to page titles
+$config['site_name'] = ":: neoticket development"; // This will be appended to page titles
 
 // Database Configuration
 
