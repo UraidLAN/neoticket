@@ -2,7 +2,7 @@
 include("inc/config.php");
 include("inc/views.php");
 
-pageHeader("home");
+pageHeader("Home");
 pageNav();
 ?>
 

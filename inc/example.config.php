@@ -1,5 +1,5 @@
 <?php
-$semver = "0.0.1-devel"
+$semver = "0.0.1-devel";
 
 // Site Configuration
 

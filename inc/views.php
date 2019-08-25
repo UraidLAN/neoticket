@@ -1,6 +1,6 @@
 <?php // views.php
 
-function pageHeader($config, $title="Invalid Page") {
+function pageHeader($title="Invalid Page") {
   global $config;
 ?>
 <!DOCTYPE html>
