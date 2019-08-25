@@ -1,6 +1,6 @@
 <?php // views.php
 
-function pageHeader($title="Invalid Page") {
+function pageHeader($title="Invalid Page", $nonav=False) {
   global $config;
 ?>
 <!DOCTYPE html>
@@ -21,9 +21,12 @@ function pageHeader($title="Invalid Page") {
   <title><?=$title." ".$config['site_name']?></title>
 
 </head>
-
+<?php if (!$nonav)
+  {
+?>
 <body id="page-top">
 <?php
+  }
 }
 
 function pageNav() {

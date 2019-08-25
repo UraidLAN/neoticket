@@ -2,7 +2,7 @@
 include("inc/config.php");
 include("inc/views.php");
 
-pageHeader("Forgot Password");
+pageHeader("Forgot Password", True);
 ?>
 
 <body class="bg-dark">

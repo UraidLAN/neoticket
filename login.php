@@ -2,7 +2,7 @@
 include("inc/config.php");
 include("inc/views.php");
 
-pageHeader("Login");
+pageHeader("Login", True);
 ?>
 
 <body class="bg-dark">
