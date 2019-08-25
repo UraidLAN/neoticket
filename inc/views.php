@@ -1,6 +1,8 @@
 <?php // views.php
-function pageHeader($title="Invalid Page") {
-  ?>
+
+function pageHeader($config, $title="Invalid Page") {
+  global $config;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +27,7 @@ function pageHeader($title="Invalid Page") {
 }
 
 function pageNav() {
+  global $config;
 ?>
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
     <a class="navbar-brand mr-1" href="/"><?=$config['version']?></a>
@@ -74,7 +77,7 @@ function pageNav() {
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="index.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -86,13 +89,12 @@ function pageNav() {
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="login.html">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
-          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <a class="dropdown-item" href="login.php">Login</a>
+          <a class="dropdown-item" href="register.php">Register</a>
+          <a class="dropdown-item" href="forgot.php">Forgot Password</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
+          <a class="dropdown-item" href="404.php">404 Page</a>
         </div>
       </li>
       <li class="nav-item">
