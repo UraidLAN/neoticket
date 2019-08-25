@@ -1,4 +1,7 @@
 <?php
+include("inc/config.php");
+include("inc/views.php");
+
 pageHeader("Login");
 ?>
 
